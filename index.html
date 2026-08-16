@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TeachercocKpit – Das Cockpit für deinen Unterrichtsalltag</title>
+<meta name="description" content="TeachercocKpit ist die lokale Desktop-App für Lehrkräfte: Sitzplan, Noten, Kompetenzen, Feedback und Klassenleitung an einem Ort. Kein Server, keine Cloud-Pflicht, kein Abo.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="index.html"><span class="tk">T</span>eachercoc<span class="tk">K</span>pit</a>
+    <nav class="site-nav" aria-label="Hauptnavigation">
+      <a href="#funktionen">Funktionen</a>
+      <a href="#schultag">Schultag</a>
+      <a href="#datenschutz">Datenschutz</a>
+      <a href="#faecher">Fächer</a>
+      <a href="#preis">Preis</a>
+      <a href="#faq">FAQ</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================ HERO ============================ -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Von einem Lehrer, für Lehrkräfte</span>
+        <h1>Das <span class="accent">Cockpit</span> für deinen Unterrichtsalltag.</h1>
+        <p class="lead">Sitzplan, Anwesenheit, Noten, Kompetenzen, Feedback und Klassenleitung – alles an einem Ort, lokal auf deinem Rechner. Statt Zettelwirtschaft und Excel-Flickwerk.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary is-pending" data-store href="#">Bald im Microsoft Store</a>
+          <a class="btn btn-secondary" href="#schultag">So arbeitest du damit</a>
+        </div>
+      </div>
+      <div class="window">
+        <div class="window-bar"><i></i><i></i><i></i></div>
+        <a class="zoomable" href="screenshots/01_cockpit.png" title="Vergroessern"><img src="screenshots/01_cockpit.png" alt="Das Cockpit: Wochenstundenplan, die heutigen Stunden, eigene Kurse, anstehende Klausuren und Aufgaben auf einer Startseite." loading="eager" width="1280" height="720"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= VERTRAUENSBAND ======================= -->
+  <div class="trust">
+    <div class="wrap">
+      <ul>
+        <li>Kein Server</li>
+        <li>Keine Cloud-Pflicht</li>
+        <li>Keine Anmeldung</li>
+        <li>Keine Telemetrie</li>
+        <li>Keine Werbung</li>
+        <li>Kein Abo</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ========================= FUNKTIONEN ========================= -->
+  <section id="funktionen">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">Funktionen</span>
+        <h2>Alles, was der Schulalltag braucht</h2>
+        <p>Kuratierte Bausteine aus echtem Unterrichtsalltag – kein Konzernprodukt, sondern über Jahre im eigenen Unterricht gewachsen.</p>
+      </div>
+      <div class="grid cols-3">
+        <div class="card">
+          <span class="tag">Unterricht &amp; Stunde</span>
+          <h3>Sitzplan mit Schnell-Eingabe</h3>
+          <p>Note, Abwesenheit, Verspätung, fehlende Hausaufgaben oder Vorfall direkt am Sitzplan erfassen – ein Tipp pro Platz. Mit Beamer-Schutz: Beim Projizieren bleiben Namen und Noten verdeckt.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Noten &amp; Leistung</span>
+          <h3>SoMi, Klausuren, Schemata</h3>
+          <p>Sonstige Mitarbeit aus gewichteten Bausteinen statt aus einem Bauchwert. Klausuren mit Punkteraster und Teilleistungen, drei Notenskalen (1–6, 0–15, A–E), Notenschema je Kurs frei einstellbar.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Kompetenzen</span>
+          <h3>Kompetenzraster &amp; Reflexion</h3>
+          <p>Beschreibendes Raster je Fach, quartalsweise geführt – nie automatisch notenwirksam. Mit Selbsteinschätzung der Schüler:innen in Ich-Form und dem Vergleich von Selbst- und Fremdbild.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Feedback</span>
+          <h3>Feedbackbögen</h3>
+          <p>Rückmeldung und Reflexion in einem Dokument, druckfertig als PDF oder als vorbereiteter Mail-Entwurf. Mit Textbausteinen für Wiederkehrendes – individuelle Rückmeldung ohne Mehrarbeit.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Planung &amp; Material</span>
+          <h3>Kursheft, Reihen &amp; Listen</h3>
+          <p>Unterrichtsreihen einmal anlegen und jedem Kurs zuweisen. Kursheft mit Themen und Hausaufgaben, Kurslisten im NRW-Druckformat, Abhaklisten für Material, Geld und Einverständnisse.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Klassenleitung</span>
+          <h3>Klasse im Blick</h3>
+          <p>Klassenakte, Ämter, Bücherverwaltung und Vertrauenskarten. Dazu Projekte, Checklisten mit Fristen, Gesprächsnotizen – bis zur Planung des Elternsprechtags.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== SCHULTAG ========================== -->
+  <section class="alt" id="schultag">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">In der Praxis</span>
+        <h2>So läuft ein Schultag damit</h2>
+        <p>Vier Stationen, an denen das Cockpit Arbeit abnimmt – von der ersten Stunde bis zum Quartalsende. Alle Abbildungen stammen aus dem Testmodus mit fiktiven Beispieldaten.</p>
+      </div>
+
+      <div class="steps">
+
+        <div class="step">
+          <div class="step-text">
+            <span class="step-num">Morgens</span>
+            <h3>Der Tag auf einen Blick</h3>
+            <p>Das Cockpit zeigt die Stunden von heute, die laufende Woche im A/B-Rhythmus, anstehende Klausuren und die Fristen aus Checklisten und Projekten. Aufgaben und Notizen liegen daneben – nach Kurs und Thema sortiert.</p>
+            <p class="step-note">Erkennt anhand des Stundenplans, welcher Kurs gerade dran ist, und springt auf Wunsch mit einem Klick hinein.</p>
+          </div>
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i></div>
+            <a class="zoomable" href="screenshots/02_kalender.png" title="Vergroessern"><img src="screenshots/02_kalender.png" alt="Kalenderansicht mit Wochenstundenplan, Terminen und Ganztags-Einträgen." loading="lazy" width="1280" height="720"></a>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-text">
+            <span class="step-num">In der Stunde</span>
+            <h3>Ein Tipp pro Platz</h3>
+            <p>Der Sitzplan bildet den Raum ab. Ein Klick auf einen Platz vergibt die Mitarbeitsnote für <em>diese</em> Stunde – erneutes Tippen überschreibt sie. Daneben: Abwesenheit, Verspätung, fehlende Hausaufgaben, Vorfall.</p>
+            <p class="step-note">Pro Stunde entsteht genau eine Note pro Person, keine Ansammlung von Einzelklicks. Auf der Kachel steht groß die Note dieser Stunde, klein dahinter Quartalsnote und Beteiligungsquote.</p>
+          </div>
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i></div>
+            <a class="zoomable" href="screenshots/11_kurs_sitzplan.png" title="Vergroessern"><img src="screenshots/11_kurs_sitzplan.png" alt="Sitzplan eines Kurses mit Schülerkacheln, Eingabeleiste für Note, Abwesenheit und Verspätung sowie Feldern für Unterrichtsinhalt und Hausaufgaben." loading="lazy" width="1280" height="720"></a>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-text">
+            <span class="step-num">Nach der Stunde</span>
+            <h3>Noten, die sich selbst zusammenrechnen</h3>
+            <p>Die Quartalstabelle zeigt Mündlichkeitsschnitt, Beteiligungsquote, SoMi-Wert und Klausur nebeneinander – und daraus den Vorschlag für Quartals- und Zeugnisnote.</p>
+            <p class="step-note">Vorschlag heißt Vorschlag: Jeder Wert lässt sich überschreiben. Das Cockpit rechnet, die Note setzt du.</p>
+          </div>
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i></div>
+            <a class="zoomable" href="screenshots/13_kurs_noten.png" title="Vergroessern"><img src="screenshots/13_kurs_noten.png" alt="Notentabelle eines Kurses mit Spalten für mündlichen Schnitt, Beiträge, Frequenz, SoMi-Wert, Klausur, Quartals- und Zeugnisnote." loading="lazy" width="1280" height="720"></a>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-text">
+            <span class="step-num">Zum Quartalsende</span>
+            <h3>Rückmeldung, die etwas sagt</h3>
+            <p>Aus Kompetenzeinschätzungen und Textbausteinen entsteht ein Feedbackbogen für Schüler:innen und Eltern – druckfertig als PDF oder als vorbereiteter Mail-Entwurf.</p>
+            <p class="step-note">Auf Wunsch mit Selbsteinschätzungsteil: Die Rückläufer werden über die Schüler-ID automatisch wieder zugeordnet.</p>
+          </div>
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i></div>
+            <a class="zoomable" href="screenshots/18_feedbackbogen.png" title="Vergroessern"><img src="screenshots/18_feedbackbogen.png" alt="Feedbackbogen mit Rückmeldetext, Kompetenzeinschätzung und Reflexionsteil." loading="lazy" width="1280" height="720"></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= EINBLICKE ========================== -->
+  <section id="einblicke">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">Weitere Einblicke</span>
+        <h2>Über den Unterricht hinaus</h2>
+        <p>Was den Schulalltag sonst noch ausmacht – jeder Bereich lässt sich einzeln abschalten, wenn du ihn nicht brauchst.</p>
+      </div>
+      <div class="shots">
+        <figure>
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i></div>
+            <a class="zoomable" href="screenshots/17_kompetenzen.png" title="Vergroessern"><img src="screenshots/17_kompetenzen.png" alt="Kompetenzraster mit Kompetenzblume und farbiger Übersicht der Einschätzungen je Kriterium." loading="lazy" width="1280" height="720"></a>
+          </div>
+          <figcaption><strong>Kompetenzen.</strong> Beschreibendes Raster statt automatischer Note – mit Kompetenzblume je Schüler:in und Heatmap über den Kurs.</figcaption>
+        </figure>
+        <figure>
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i></div>
+            <a class="zoomable" href="screenshots/03_kurse.png" title="Vergroessern"><img src="screenshots/03_kurse.png" alt="Kursübersicht, getrennt nach Sekundarstufe I und II, mit Fach, Stufe und Schülerzahl je Kurs." loading="lazy" width="1280" height="720"></a>
+          </div>
+          <figcaption><strong>Deine Kurse.</strong> Getrennt nach Sekundarstufe I und II. Das Zahnrad an jeder Kachel öffnet Kursdaten, Schülerliste, Zugangscodes und Dokumente.</figcaption>
+        </figure>
+        <figure>
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i></div>
+            <a class="zoomable" href="screenshots/25_uplanung_offen.png" title="Vergroessern"><img src="screenshots/25_uplanung_offen.png" alt="Geöffneter Planungsordner mit der Unterrichtsreihe „Ökologie: Der See als Lebensraum“, Fach, Stufe und Stundenzahl." loading="lazy" width="1280" height="720"></a>
+          </div>
+          <figcaption><strong>Unterrichtsplanung.</strong> Reihen einmal anlegen, jedem Kurs zuweisen – bei Ausfall rückt die Planung nach, statt zu verrutschen.</figcaption>
+        </figure>
+        <figure>
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i></div>
+            <a class="zoomable" href="screenshots/10_elternsprechtag.png" title="Vergroessern"><img src="screenshots/10_elternsprechtag.png" alt="Elternsprechtag mit Terminraster und belegten Zeitfenstern." loading="lazy" width="1280" height="720"></a>
+          </div>
+          <figcaption><strong>Elternsprechtag.</strong> Terminraster im eigenen Takt. Ein Klick auf den Namen öffnet die Noten aus <em>allen</em> Kursen.</figcaption>
+        </figure>
+        <figure>
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i></div>
+            <a class="zoomable" href="screenshots/11_kurs_sitzplan.png" title="Vergroessern"><img src="screenshots/11_kurs_sitzplan.png" alt="Sitzplan mit Schuelerkacheln und der Eingabeleiste fuer Note, Abwesenheit und Verspaetung." loading="lazy" width="1280" height="720"></a>
+          </div>
+          <figcaption><strong>Beamer-Schutz.</strong> Ein Schalter verdeckt alles Sensible, solange projiziert wird – Namen im Sitzplan, eigene Passwörter, Zugangscodes. Offene Anzeigen fallen dabei von selbst zu.</figcaption>
+        </figure>
+        <figure>
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i></div>
+            <a class="zoomable" href="screenshots/07_checklisten.png" title="Vergroessern"><img src="screenshots/07_checklisten.png" alt="Checklisten mit Aufgaben, Fristen und Fortschritt." loading="lazy" width="1280" height="720"></a>
+          </div>
+          <figcaption><strong>Checklisten.</strong> Wiederkehrende Abläufe einmal als Vorlage anlegen. Fristen erscheinen als Meilensteine im Kalender und auf der Startseite.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= DATENSCHUTZ ======================== -->
+  <section class="alt" id="datenschutz">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">Datenschutz</span>
+        <h2>Deine Daten bleiben hier.</h2>
+        <p>Datenschutz ist bei TeachercocKpit keine Einstellung, sondern Architektur: Die App läuft vollständig lokal auf deinem Gerät. Es gibt schlicht keinen Server, an den etwas gesendet werden könnte.</p>
+      </div>
+      <div class="local-diagram">
+        <div class="device">
+          <h4>Dein Rechner</h4>
+          <div class="chips">
+            <span class="chip">Noten</span>
+            <span class="chip">Sitzpläne</span>
+            <span class="chip">Anwesenheit</span>
+            <span class="chip">Kompetenzen</span>
+            <span class="chip">Feedback</span>
+            <span class="chip">Klassenleitung</span>
+            <span class="chip">Sicherungen (selbst gewählter Ordner)</span>
+          </div>
+        </div>
+        <div class="no-flow" aria-hidden="true">
+          <span class="barrier">⇥ ⇤</span>
+          Nichts verlässt<br>dein Gerät
+        </div>
+        <div class="cloud-crossed">
+          <h4>Was es nicht gibt:</h4>
+          <ul>
+            <li>keinen Hersteller-Server</li>
+            <li>keine Cloud-Pflicht</li>
+            <li>keine Anmeldung / kein Konto beim Hersteller</li>
+            <li>keine Telemetrie, keine Werbung</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note">Für dich heißt das: Schülerdaten liegen dort, wo sie hingehören – auf deinem eigenen, dienstlich genutzten Gerät und in Sicherungsordnern, die du selbst bestimmst. Internet brauchst du nur für den Kauf im Microsoft Store und für Updates. Ob der Einsatz an deiner Schule datenschutzrechtlich zulässig ist, entscheidet sich am Gerät und an der Schulordnung – das Programm nimmt dir diese Prüfung nicht ab, macht sie aber einfach: Es überträgt nichts.</p>
+    </div>
+  </section>
+
+  <!-- ===================== FÄCHER & SCHULFORMEN =================== -->
+  <section id="faecher">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">Fächer &amp; Schulformen</span>
+        <h2>Für dein Fach. Für deine Schule.</h2>
+        <p>Mitgelieferte Leistungsbewertungs-Kataloge nach realen Leistungskonzepten – und jeder Katalog ist vollständig an den schulinternen Lehrplan deiner Fachschaft anpassbar.</p>
+      </div>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Fächer mit eigenem Katalog</h3>
+          <p>Mit dem Fach kommen Kriterien, SoMi-Bausteine, Notenschlüssel und Rückmeldesätze automatisch mit:</p>
+          <div class="subject-chips">
+            <span class="chip">Mathematik</span>
+            <span class="chip">Deutsch</span>
+            <span class="chip">Englisch</span>
+            <span class="chip">Französisch</span>
+            <span class="chip">Spanisch</span>
+            <span class="chip">Biologie</span>
+            <span class="chip">Chemie</span>
+            <span class="chip">Informatik</span>
+            <span class="chip">Erziehungswissenschaft</span>
+            <span class="chip">Erdkunde</span>
+            <span class="chip">Sport</span>
+          </div>
+          <p class="card-note">Für alle übrigen Fächer gibt es einen fachneutralen Basiskatalog als Startpunkt – ebenfalls frei anpassbar.</p>
+        </div>
+        <div class="card">
+          <h3>Fach-Spezialitäten &amp; Schulformen</h3>
+          <p>Manche Fächer bewerten anders – dafür gibt es eigene Module:</p>
+          <ul class="plain-list">
+            <li><strong>Sport:</strong> Ich/Wir/Sache-Bewertung statt klassischer Kriterienliste</li>
+            <li><strong>Erdkunde:</strong> Topographietests erstellen und die Ergebnisse automatisch auswerten</li>
+          </ul>
+          <p class="card-note">Ausgelegt auf weiterführende Schulen – Gymnasium, Gesamtschule, Real- und Sekundarschule. Das Notenmodell der Oberstufe folgt den Vorgaben in Nordrhein-Westfalen; Kriterien, Skalen und Gewichte sind frei einstellbar, also auch außerhalb von NRW nutzbar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ PREIS =========================== -->
+  <section class="alt" id="preis">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">Preis</span>
+        <h2>Kostenlos ausprobieren, einmalig freischalten.</h2>
+        <p>Kein Abo, keine Laufzeit, keine versteckten Kosten.</p>
+      </div>
+      <div class="price-cards">
+        <div class="price-card">
+          <h3>Testmodus</h3>
+          <div class="amount">kostenlos</div>
+          <ul>
+            <li>Alle Funktionen mit fiktiven Beispieldaten erkunden</li>
+            <li>Geführte Tour in drei Stufen</li>
+            <li>Ohne Anmeldung, ohne Zeitlimit</li>
+            <li>Keine Speicherung echter Daten</li>
+          </ul>
+          <a class="btn btn-secondary is-pending" data-store href="#">Bald im Microsoft Store</a>
+        </div>
+        <div class="price-card featured">
+          <span class="ribbon">Empfohlen</span>
+          <span class="intro-badge" data-intro-note>Einführungspreis</span>
+          <h3>Vollversion</h3>
+          <div class="amount" data-price>einmalig, fairer Preis</div>
+          <ul>
+            <li>Echtbetrieb mit deinen Kursen und Klassen</li>
+            <li>Einmalkauf im Microsoft Store – kein Abo</li>
+            <li>Lizenz bleibt bei Neuinstallation und Gerätewechsel erhalten</li>
+            <li>Updates über den Store inklusive</li>
+          </ul>
+          <a class="btn btn-primary is-pending" data-store href="#">Bald im Microsoft Store</a>
+        </div>
+      </div>
+      <p class="note" data-intro-note>Der Einführungspreis gilt zum Start und wird später auf den regulären Preis angehoben. Wer einmal gekauft hat, behält die Vollversion – auch bei Neuinstallation und Gerätewechsel.</p>
+      <p class="note"><strong>Für Kollegien und Fachschaften:</strong> Test-Zugänge (Promo-Codes) gibt es auf Anfrage – <a href="#kontakt">einfach melden</a>.</p>
+
+      <!-- Store-Status: solange storeUrl in config.js leer ist, steht hier der
+           Hinweis. Sobald der Link eingetragen wird, blendet config.js diesen
+           Kasten aus und schaltet alle Buttons scharf. -->
+      <div class="store-status" data-store-pending>
+        <div class="store-status-icon" aria-hidden="true">🛈</div>
+        <div>
+          <strong>Noch nicht im Store verfügbar.</strong>
+          Die Anwendung ist fertig und wird gerade für die Veröffentlichung im Microsoft Store vorbereitet.
+          Sobald der Eintrag freigeschaltet ist, führen die Knöpfe auf dieser Seite direkt dorthin.
+          Wer vorab Bescheid wissen möchte: <a href="#kontakt">kurz melden</a> – dann gibt es eine Nachricht zum Start.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================== ABGRENZUNG ======================== -->
+  <section id="abgrenzung">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">Ehrlich gesagt</span>
+        <h2>Was TeachercocKpit nicht ist</h2>
+        <p>Damit du nicht das Falsche erwartest – und weißt, wofür du weiterhin etwas anderes brauchst.</p>
+      </div>
+      <div class="grid cols-2">
+        <div class="card plain">
+          <h3>Kein Schulverwaltungssystem</h3>
+          <p>Es ersetzt kein SchILD, kein Untis und keine Schulplattform. Es ist das Werkzeug <em>einer</em> Lehrkraft für <em>ihren</em> Unterricht.</p>
+        </div>
+        <div class="card plain">
+          <h3>Keine Kollaborationsplattform</h3>
+          <p>Eine Lehrkraft, ein Gerät. Kein Team-Zugriff, keine geteilten Kurse, keine gemeinsame Notenkonferenz.</p>
+        </div>
+        <div class="card plain">
+          <h3>Kein Elternportal</h3>
+          <p>Rückmeldungen entstehen als PDF oder Mail-Entwurf und gehen die Wege, die deine Schule ohnehin nutzt.</p>
+        </div>
+        <div class="card plain">
+          <h3>Keine automatische Notenfindung</h3>
+          <p>Das Programm rechnet Vorschläge, setzt aber keine Noten. Jeder Wert bleibt überschreibbar – die Entscheidung bleibt pädagogisch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= FAQ ============================ -->
+  <section class="alt faq" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">FAQ</span>
+        <h2>Häufige Fragen</h2>
+      </div>
+      <details>
+        <summary>Brauche ich eine Internetverbindung?</summary>
+        <p>Nein. Die App läuft vollständig offline. Internet brauchst du nur für den Kauf im Microsoft Store und für Updates.</p>
+      </details>
+      <details>
+        <summary>Wo liegen meine Daten?</summary>
+        <p>Ausschließlich lokal auf deinem Rechner – in einer Datei, deren Speicherort du selbst wählst, und in Sicherungsordnern, die du selbst festlegst. Es gibt keinen Hersteller-Server und keine Cloud-Pflicht. Wenn du den Datenordner in einen synchronisierten Ordner legst, hast du deine Daten auf mehreren Geräten – aber das entscheidest du, nicht das Programm.</p>
+      </details>
+      <details>
+        <summary>Was passiert, wenn mein Rechner kaputtgeht?</summary>
+        <p>Dafür gibt es die Vollsicherung: eine einzige Datei mit dem kompletten Datenbestand, die du auf ein neues Gerät mitnimmst und dort einliest. Das Cockpit erinnert dich wöchentlich daran, wenn länger keine Sicherung entstanden ist.</p>
+      </details>
+      <details>
+        <summary>Kann ich meine bestehenden Klassenlisten übernehmen?</summary>
+        <p>Ja. Schülerlisten lassen sich als CSV-Datei importieren – mit freier Spaltenzuordnung, weil jede Schule ihre Listen anders exportiert. Vor- und Nachname werden getrennt eingelesen.</p>
+      </details>
+      <details>
+        <summary>Läuft TeachercocKpit auf dem iPad?</summary>
+        <p>Die Desktop-App gibt es für Windows über den Microsoft Store. Zusätzlich existiert eine Browser-Variante, die sich auch auf einem iPad nutzen lässt – mit Einschränkungen bei der Dateiablage, weil Browser dort weniger dürfen.</p>
+      </details>
+      <details>
+        <summary>Muss ich alles benutzen, was drin ist?</summary>
+        <p>Nein. Klassenleitung, Projekte, Gespräche, Checklisten, Elternsprechtag und weitere Bereiche lassen sich einzeln abschalten und verschwinden dann aus der Navigation. Abschalten blendet nur aus – deine Daten bleiben erhalten, falls du es dir anders überlegst.</p>
+      </details>
+      <details>
+        <summary>Was passiert am Ende des Halbjahres?</summary>
+        <p>Der Halbjahresabschluss archiviert den kompletten Notenstand und leert den Kurs für das neue Halbjahr – Schülerliste, Notenschema und Planung bleiben stehen. Zum Schuljahresende rückt zusätzlich die Jahrgangsstufe weiter. Für neu zusammengesetzte Kurse gibt es einen Übertrag, der die Schüler:innen mitnimmt und die Noten zurücklässt.</p>
+      </details>
+      <details>
+        <summary>Ist das ein Abo?</summary>
+        <p>Nein. Der Testmodus ist kostenlos, die Vollversion ist ein einmaliger Kauf. Die Lizenz hängt an deinem Microsoft-Konto und übersteht Neuinstallation und Gerätewechsel.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- =========================== KONTAKT ========================== -->
+  <section id="kontakt">
+    <div class="wrap">
+      <div class="contact-box">
+        <h2 style="margin-top:0">Fragen? Schreib mir.</h2>
+        <p>Ob Rückmeldung, Funktionswunsch oder Test-Zugang für deine Fachschaft:</p>
+        <p><a data-mail href="#">kontakt@BEISPIEL.de (Platzhalter)</a></p>
+        <p class="contact-note">Mich interessieren besonders Rückmeldungen aus Fächern und Schulformen, die ich selbst nicht unterrichte.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Lightbox: wird von den .zoomable-Links befüllt (Aufbau siehe Skript unten) -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Bildansicht" hidden>
+  <button class="lightbox-close" type="button" aria-label="Schließen">✕</button>
+  <figure style="margin:0;display:grid;place-items:center">
+    <img alt="">
+    <figcaption></figcaption>
+  </figure>
+  <div class="lightbox-hint">Klick daneben oder Esc schließt · ← → blättert</div>
+</div>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="wordmark"><span class="tk">T</span>eachercoc<span class="tk">K</span>pit</span>
+    <nav aria-label="Rechtliches">
+      <a href="datenschutz.html">Datenschutzerklärung</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <small>Diese Website verwendet keine Cookies und keine Tracker.</small>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script>
+// Dezente Einblend-Animation beim Scrollen (ohne Fremdbibliothek).
+(function () {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (!("IntersectionObserver" in window)) return;
+  var els = document.querySelectorAll(".card, .shots figure, .price-card, .local-diagram > *, .faq details, .contact-box, .section-head, .step");
+  els.forEach(function (el) { el.classList.add("reveal"); });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  els.forEach(function (el) { io.observe(el); });
+})();
+
+/* Lightbox — ohne Fremdbibliothek.
+   Warum überhaupt: Die Seite ist auf 1100 px Inhaltsbreite begrenzt; ein Screenshot
+   wird auf einem großen Monitor deshalb NICHT größer. Gemessen landet die 13-px-Schrift
+   der App in der Galerie bei rund 5 px. Im Overlay füllt das Bild die Fensterhöhe. */
+(function () {
+  var box = document.getElementById("lightbox");
+  if (!box) return;
+  var img = box.querySelector("img");
+  var cap = box.querySelector("figcaption");
+  var zu = box.querySelector(".lightbox-close");
+  var links = [].slice.call(document.querySelectorAll("a.zoomable"));
+  if (!links.length) return;
+  var aktuell = -1, vorher = null;
+
+  function text(a) {
+    var f = a.closest("figure");
+    var c = f && f.querySelector("figcaption");
+    if (c) return c.textContent.trim();
+    var i = a.querySelector("img");
+    return i ? i.getAttribute("alt") || "" : "";
+  }
+  function zeige(i) {
+    aktuell = (i + links.length) % links.length;
+    var a = links[aktuell];
+    img.src = a.getAttribute("href");
+    img.alt = a.querySelector("img") ? a.querySelector("img").alt : "";
+    cap.textContent = text(a);
+  }
+  function auf(i, ausloeser) {
+    vorher = ausloeser || document.activeElement;
+    zeige(i);
+    box.hidden = false; box.classList.add("is-open");
+    document.body.classList.add("lightbox-offen");
+    zu.focus();
+  }
+  function schliessen() {
+    box.classList.remove("is-open"); box.hidden = true;
+    document.body.classList.remove("lightbox-offen");
+    img.removeAttribute("src");
+    if (vorher && vorher.focus) vorher.focus();
+  }
+
+  links.forEach(function (a, i) {
+    a.addEventListener("click", function (e) {
+      // Modifiziertes Klicken (neuer Tab) und Mittelklick weiterhin dem Browser überlassen
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      e.preventDefault(); auf(i, a);
+    });
+  });
+  zu.addEventListener("click", schliessen);
+  box.addEventListener("click", function (e) { if (e.target === box) schliessen(); });
+  document.addEventListener("keydown", function (e) {
+    if (box.hidden) return;
+    if (e.key === "Escape") schliessen();
+    else if (e.key === "ArrowRight") zeige(aktuell + 1);
+    else if (e.key === "ArrowLeft") zeige(aktuell - 1);
+  });
+})();
+</script>
+</body>
+</html>
