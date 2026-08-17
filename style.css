@@ -455,9 +455,19 @@ body.lightbox-offen { overflow: hidden; }
 .site-footer .wordmark .tk { color: #8fd0c2; }
 .site-footer small { font-size: .85rem; opacity: .75; }
 
-/* --- Scroll-Reveal (JS fügt .reveal hinzu; ohne JS alles sichtbar) ------- */
-.reveal { opacity: 0; transform: translateY(18px); transition: opacity .55s ease, transform .55s ease; }
-.reveal.in { opacity: 1; transform: none; }
+/* --- Kein Einblend-Effekt mehr — mit Absicht -----------------------------
+   Hier standen nacheinander zwei Anläufe, die Inhalte beim Scrollen einzublenden:
+   erst ein IntersectionObserver, dann eine reine CSS-Animation. BEIDE hatten dieselbe
+   Schwachstelle — den Ausgangszustand `opacity: 0`. Bleibt der Auslöser aus (Observer
+   schweigt, Animation startet nicht, weil der Tab nicht rendert), bleibt der Inhalt
+   unsichtbar. Auf der veröffentlichten Seite ist genau das passiert: Die Screenshots
+   fehlten, und weil unsichtbare Container keine `loading="lazy"`-Bilder anfordern, lud
+   der Browser sie nicht einmal herunter.
+
+   Eine Verzierung, die den Inhalt verschlucken kann, ist auf einer Seite, deren einziger
+   Zweck das Zeigen dieses Inhalts ist, keinen Effekt wert. Deshalb: ersatzlos gestrichen.
+   Wer später wieder animieren will — nur über Eigenschaften, die den Inhalt sichtbar
+   lassen (z. B. `transform`), niemals über `opacity` als Startzustand. */
 
 /* --- Rechtsseiten -------------------------------------------------------- */
 .legal { padding: 56px 0 80px; }

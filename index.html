@@ -464,19 +464,9 @@
 
 <script src="config.js"></script>
 <script>
-// Dezente Einblend-Animation beim Scrollen (ohne Fremdbibliothek).
-(function () {
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  if (!("IntersectionObserver" in window)) return;
-  var els = document.querySelectorAll(".card, .shots figure, .price-card, .local-diagram > *, .faq details, .contact-box, .section-head, .step");
-  els.forEach(function (el) { el.classList.add("reveal"); });
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
-    });
-  }, { threshold: 0.12 });
-  els.forEach(function (el) { io.observe(el); });
-})();
+/* Das Einblenden erledigt jetzt eine reine CSS-Animation (style.css) — sie braucht kein
+   JavaScript und kann deshalb nicht steckenbleiben. Der frühere IntersectionObserver hat
+   auf der veröffentlichten Seite genau das getan und die Screenshots unsichtbar gelassen. */
 
 /* Lightbox — ohne Fremdbibliothek.
    Warum überhaupt: Die Seite ist auf 1100 px Inhaltsbreite begrenzt; ein Screenshot
