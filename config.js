@@ -5,9 +5,9 @@
    ========================================================================= */
 window.SITE = {
   /* --- Marketing --------------------------------------------------------- */
-  // Link zum Microsoft-Store-Eintrag. Solange leer (""), zeigen die Buttons
-  // "Bald im Microsoft Store" und sind nicht klickbar.
-  storeUrl: "",
+  // Link zum Microsoft-Store-Eintrag (Store-ID 9N7FBMHQMJBT, dieselbe wie im
+  // Kauf-Deep-Link der App). Leer ("") = Buttons zeigen "Bald im Microsoft Store".
+  storeUrl: "https://apps.microsoft.com/detail/9N7FBMHQMJBT",
 
   // Preise. priceIntro leer lassen, wenn es keinen Einführungspreis (mehr)
   // gibt – dann steht nur der reguläre Preis auf der Seite.

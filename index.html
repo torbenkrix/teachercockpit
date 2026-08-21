@@ -3,9 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TeachercocKpit – Das Cockpit für deinen Unterrichtsalltag</title>
-<meta name="description" content="TeachercocKpit ist die lokale Desktop-App für Lehrkräfte: Sitzplan, Noten, Kompetenzen, Feedback und Klassenleitung an einem Ort. Kein Server, keine Cloud-Pflicht, kein Abo.">
+<title>TeachercocKpit – Notenbuch & Unterrichtsplaner für Lehrkräfte</title>
+<meta name="description" content="Digitales Notenbuch, Sitzplan, Unterrichtsplanung und Klassenleitung in einer Windows-App – komplett lokal, ohne Cloud, ohne Abo. Kostenlos ausprobieren im Testmodus.">
+<!-- SEO: Die kanonische Adresse der Seite. Liegt die Website unter einer anderen
+     Domain oder in einem Unterordner (z. B. GitHub Pages), diese URL hier sowie in
+     den og:/twitter:-Tags, im JSON-LD unten und in sitemap.xml anpassen. -->
+<link rel="canonical" href="https://teachercockpit.de/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#2c6e63">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="icon-512.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!-- Vorschau-Karten für Messenger, Social Media und Suchergebnisse -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TeachercocKpit">
+<meta property="og:title" content="TeachercocKpit – Notenbuch & Unterrichtsplaner für Lehrkräfte">
+<meta property="og:description" content="Digitales Notenbuch, Sitzplan, Unterrichtsplanung und Klassenleitung in einer Windows-App – komplett lokal, ohne Cloud, ohne Abo.">
+<meta property="og:url" content="https://teachercockpit.de/">
+<meta property="og:image" content="https://teachercockpit.de/screenshots/01_cockpit.png">
+<meta property="og:image:alt" content="Die Startseite des TeachercocKpit mit Wochenstundenplan, heutigen Stunden und Kursen.">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TeachercocKpit – Notenbuch & Unterrichtsplaner für Lehrkräfte">
+<meta name="twitter:description" content="Digitales Notenbuch, Sitzplan, Unterrichtsplanung und Klassenleitung in einer Windows-App – komplett lokal, ohne Cloud, ohne Abo.">
+<meta name="twitter:image" content="https://teachercockpit.de/screenshots/01_cockpit.png">
 <link rel="stylesheet" href="style.css">
+<!-- Strukturierte Daten für Suchmaschinen. Preis und Store-Link stehen hier bewusst
+     fest (Suchmaschinen führen config.js nicht aus) — bei Preisänderung mitziehen. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "TeachercocKpit",
+  "operatingSystem": "Windows 10, Windows 11",
+  "applicationCategory": "EducationalApplication",
+  "description": "Digitales Notenbuch und Unterrichtsplaner für Lehrkräfte: Sitzplan mit Noteneingabe, SoMi und Klausuren, Kompetenzraster, Feedbackbögen, Unterrichtsplanung und Klassenleitung – komplett lokal auf dem eigenen Rechner, ohne Cloud, ohne Konto, ohne Abo.",
+  "url": "https://teachercockpit.de/",
+  "image": "https://teachercockpit.de/screenshots/01_cockpit.png",
+  "inLanguage": "de",
+  "offers": {
+    "@type": "Offer",
+    "price": "14.99",
+    "priceCurrency": "EUR",
+    "url": "https://apps.microsoft.com/detail/9N7FBMHQMJBT"
+  },
+  "author": { "@type": "Person", "name": "Torben Krix" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Brauche ich eine Internetverbindung?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nein. Die App läuft vollständig offline. Internet brauchst du nur für den Kauf im Microsoft Store und für Updates." } },
+    { "@type": "Question", "name": "Wo liegen meine Daten?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ausschließlich lokal auf deinem Rechner – in einer Datei, deren Speicherort du selbst wählst, und in Sicherungsordnern, die du selbst festlegst. Es gibt keinen Hersteller-Server und keine Cloud-Pflicht." } },
+    { "@type": "Question", "name": "Was passiert, wenn mein Rechner kaputtgeht?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Dafür gibt es die Vollsicherung: eine einzige Datei mit dem kompletten Datenbestand, die du auf ein neues Gerät mitnimmst und dort einliest. Das Cockpit erinnert dich wöchentlich daran, wenn länger keine Sicherung entstanden ist." } },
+    { "@type": "Question", "name": "Kann ich meine bestehenden Klassenlisten übernehmen?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Schülerlisten lassen sich als CSV-Datei importieren – mit freier Spaltenzuordnung, weil jede Schule ihre Listen anders exportiert." } },
+    { "@type": "Question", "name": "Läuft TeachercocKpit auf dem iPad?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Die Desktop-App gibt es für Windows über den Microsoft Store. Zusätzlich existiert eine Browser-Variante, die sich auch auf einem iPad nutzen lässt – mit Einschränkungen bei der Dateiablage." } },
+    { "@type": "Question", "name": "Muss ich alles benutzen, was drin ist?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nein. Klassenleitung, Projekte, Gespräche, Checklisten, Elternsprechtag und weitere Bereiche lassen sich einzeln abschalten. Abschalten blendet nur aus – deine Daten bleiben erhalten." } },
+    { "@type": "Question", "name": "Was passiert am Ende des Halbjahres?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Der Halbjahresabschluss archiviert den kompletten Notenstand und leert den Kurs für das neue Halbjahr – Schülerliste, Notenschema und Planung bleiben stehen. Zum Schuljahresende rückt zusätzlich die Jahrgangsstufe weiter." } },
+    { "@type": "Question", "name": "Ist das ein Abo?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Nein. Der Testmodus ist kostenlos, die Vollversion ist ein einmaliger Kauf. Die Lizenz hängt an deinem Microsoft-Konto und übersteht Neuinstallation und Gerätewechsel." } }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -40,7 +108,7 @@
       </div>
       <div class="window">
         <div class="window-bar"><i></i><i></i><i></i></div>
-        <a class="zoomable" href="screenshots/01_cockpit.png" title="Vergroessern"><img src="screenshots/01_cockpit.png" alt="Das Cockpit: Wochenstundenplan, die heutigen Stunden, eigene Kurse, anstehende Klausuren und Aufgaben auf einer Startseite." loading="eager" width="3840" height="2160"></a>
+        <a class="zoomable" href="screenshots/01_cockpit.png" title="Vergroessern"><img src="screenshots/01_cockpit.png" alt="Das Cockpit: Wochenstundenplan, die heutigen Stunden, eigene Kurse, anstehende Klausuren und Aufgaben auf einer Startseite." loading="eager" fetchpriority="high" width="3840" height="2160"></a>
       </div>
     </div>
   </section>
@@ -65,13 +133,13 @@
       <div class="section-head">
         <span class="section-eyebrow">Funktionen</span>
         <h2>Alles, was der Schulalltag braucht</h2>
-        <p>Kuratierte Bausteine aus echtem Unterrichtsalltag – kein Konzernprodukt, sondern über Jahre im eigenen Unterricht gewachsen.</p>
+        <p>Kuratierte Bausteine aus echtem Unterrichtsalltag – kein Konzernprodukt, sondern über Jahre im eigenen Unterricht gewachsen. Die komplette Liste steht <a href="#funktionsliste">weiter unten im Detail</a>.</p>
       </div>
       <div class="grid cols-3">
         <div class="card">
           <span class="tag">Unterricht &amp; Stunde</span>
           <h3>Sitzplan mit Schnell-Eingabe</h3>
-          <p>Note, Abwesenheit, Verspätung, fehlende Hausaufgaben oder Vorfall direkt am Sitzplan erfassen – ein Tipp pro Platz. Mit Beamer-Schutz: Beim Projizieren bleiben Namen und Noten verdeckt.</p>
+          <p>Note, Abwesenheit, Verspätung, fehlende Hausaufgaben oder Vorfall direkt am Sitzplan erfassen – ein Tipp pro Platz. Auf Wunsch mit Schülerfotos auf den Kacheln. Mit Beamer-Schutz: Beim Projizieren bleiben Noten, Vermerke und Fotos verdeckt.</p>
         </div>
         <div class="card">
           <span class="tag">Noten &amp; Leistung</span>
@@ -86,7 +154,7 @@
         <div class="card">
           <span class="tag">Feedback</span>
           <h3>Feedbackbögen</h3>
-          <p>Rückmeldung und Reflexion in einem Dokument, druckfertig als PDF oder als vorbereiteter Mail-Entwurf. Mit Textbausteinen für Wiederkehrendes – individuelle Rückmeldung ohne Mehrarbeit.</p>
+          <p>Rückmeldung und Reflexion in einem Dokument, druckfertig als PDF oder als vorbereiteter Mail-Entwurf. Mit Textbausteinen für Wiederkehrendes – und je Kurs abschaltbaren Bogen-Blöcken, damit der Bogen zu deiner Lerngruppe passt.</p>
         </div>
         <div class="card">
           <span class="tag">Planung &amp; Material</span>
@@ -96,7 +164,7 @@
         <div class="card">
           <span class="tag">Klassenleitung</span>
           <h3>Klasse im Blick</h3>
-          <p>Klassenakte, Ämter, Bücherverwaltung und Vertrauenskarten. Dazu Projekte, Checklisten mit Fristen, Gesprächsnotizen – bis zur Planung des Elternsprechtags.</p>
+          <p>Klassenakte mit Steckbriefen, Ämter, Bücherverwaltung, Vertrauenskarten und Geburtstage im Kalender. Dazu Projekte, Checklisten mit Fristen, Gesprächsnotizen – bis zur Planung des Elternsprechtags.</p>
         </div>
       </div>
     </div>
@@ -209,9 +277,9 @@
         <figure>
           <div class="window">
             <div class="window-bar"><i></i><i></i><i></i></div>
-            <a class="zoomable" href="screenshots/11_kurs_sitzplan.png" title="Vergroessern"><img src="screenshots/11_kurs_sitzplan.png" alt="Sitzplan mit Schuelerkacheln und der Eingabeleiste fuer Note, Abwesenheit und Verspaetung." loading="lazy" width="3840" height="2160"></a>
+            <a class="zoomable" href="screenshots/28_beamer.png" title="Vergroessern"><img src="screenshots/28_beamer.png" alt="Sitzplan im Beamer-Schutz: Die Kacheln zeigen nur noch Namen, Noten und Vermerke sind verdeckt." loading="lazy" width="3840" height="2160"></a>
           </div>
-          <figcaption><strong>Beamer-Schutz.</strong> Ein Schalter verdeckt alles Sensible, solange projiziert wird – Namen im Sitzplan, eigene Passwörter, Zugangscodes. Offene Anzeigen fallen dabei von selbst zu.</figcaption>
+          <figcaption><strong>Beamer-Schutz.</strong> Ein Schalter verdeckt alles Sensible, solange projiziert wird – Noten und Vermerke im Sitzplan, eigene Passwörter, Zugangscodes. Offene Anzeigen fallen dabei von selbst zu.</figcaption>
         </figure>
         <figure>
           <div class="window">
@@ -240,6 +308,13 @@
             <a class="zoomable" href="screenshots/04_klassenleitung.png" title="Vergroessern"><img src="screenshots/04_klassenleitung.png" alt="Klassenleitung mit Reitern für Listen, Vertrauenskarten und Bücher sowie der Schülerübersicht." loading="lazy" width="3840" height="2160"></a>
           </div>
           <figcaption><strong>Klassenleitung.</strong> Klassenakte, Ämter, Bücher und Vertrauenskarten — die Klasse jenseits des eigenen Fachs, mit Export der ganzen Akte für die Übergabe.</figcaption>
+        </figure>
+        <figure>
+          <div class="window">
+            <div class="window-bar"><i></i><i></i><i></i></div>
+            <a class="zoomable" href="screenshots/29_kiprompts.png" title="Vergroessern"><img src="screenshots/29_kiprompts.png" alt="KI-Prompts-Bibliothek mit Ordnern und fertigen Vorlagen, etwa für Elternbriefe oder Übungsaufgaben." loading="lazy" width="3840" height="2160"></a>
+          </div>
+          <figcaption><strong>KI-Prompts.</strong> Eine Bibliothek erprobter Vorlagen für externe KI-Werkzeuge — nach Fach gefiltert, mit Platzhaltern zum Ausfüllen. Namen setzt du bewusst erst außerhalb ein; die App selbst hat keine KI-Anbindung und sendet nichts.</figcaption>
         </figure>
       </div>
     </div>
@@ -405,8 +480,109 @@
     </div>
   </section>
 
+  <!-- ====================== ALLE FUNKTIONEN ======================= -->
+  <section class="alt" id="funktionsliste">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-eyebrow">Im Detail</span>
+        <h2>Alle Funktionen im Überblick</h2>
+        <p>Die komplette Liste – von den großen Bausteinen bis zu den kleinen Handgriffen, die den Alltag glätten.</p>
+      </div>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Unterricht &amp; Stunde</h3>
+          <ul class="plain-list">
+            <li>Sitzplan mit Ein-Tipp-Noteneingabe</li>
+            <li>Stapeleingabe und Quartalstabelle – drei Wege, dieselbe Note</li>
+            <li>Kursheft mit Thema, Hausaufgaben und Notizen je Stunde</li>
+            <li>Anwesenheit mit amtlicher 45-Minuten-Umrechnung</li>
+            <li>Info-Vermerke und Vorfälle – ein Vorfall wird per Klick zur Aufgabe</li>
+            <li>Schülerfotos auf den Kacheln (optional, lokal gespeichert)</li>
+            <li>Vertretungsstunden und Ausfälle – die Planung rückt automatisch nach</li>
+            <li>Beamer-Schutz mit Automatik beim Projizieren</li>
+            <li>Classroom Tools: Timer, Zufallsauswahl, Gruppen, Tabu</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Noten &amp; Leistung</h3>
+          <ul class="plain-list">
+            <li>Drei Skalen: 1–6, 0–15 Punkte (Sek II), A–E</li>
+            <li>SoMi aus gewichteten Bausteinen mit Beteiligungsquote</li>
+            <li>Klausuren mit Punkteraster, Erwartungshorizont und Teilleistungen</li>
+            <li>Mündliche Prüfung mit eigenem Notenweg</li>
+            <li>Notenschema je Kurs: Gewichte, Schwellen, Rundung</li>
+            <li>Quartals- und Zeugnisnote als überschreibbarer Vorschlag</li>
+            <li>Schüler-Dashboard: jede Note nachvollziehbar hergeleitet</li>
+            <li>Stundennoten-Verlauf und Entwicklung über Halbjahre</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Rückmeldung &amp; Kompetenzen</h3>
+          <ul class="plain-list">
+            <li>Kompetenzraster je Fach, quartalsweise geführt</li>
+            <li>Kompetenzblume je Schüler:in, Heatmap über den Kurs</li>
+            <li>Feedbackbogen druckfertig – Bogen-Blöcke je Kurs an/aus</li>
+            <li>Textbausteine für wiederkehrende Formulierungen</li>
+            <li>Selbsteinschätzung in Ich-Form, Rückläufer per ID zugeordnet</li>
+            <li>Vergleich von Selbst- und Fremdbild</li>
+            <li>Mail-Entwürfe mit PDF-Anhang (.eml, ohne Versand aus der App)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Planung &amp; Material</h3>
+          <ul class="plain-list">
+            <li>Unterrichtsreihen als Vorlagen, jedem Kurs zuweisbar</li>
+            <li>Detailplanung je Stunde – auch als tabellarischer Verlauf</li>
+            <li>Dateien per Drag &amp; Drop an Stunden und Vorlagen</li>
+            <li>Bei Ausfall rückt die Planung nach, statt zu verrutschen</li>
+            <li>Kalender mit Terminen, Klausuren und Meilensteinen</li>
+            <li>NRW-Ferien mit einem Klick, Schulkalender per ICS-Import</li>
+            <li>Stundenraster mit echten Uhrzeiten, Pausen und Aufsichten</li>
+            <li>A/B-Wochen inklusive Sonderfall 53-Wochen-Jahr</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Klasse &amp; Organisation</h3>
+          <ul class="plain-list">
+            <li>Klassenleitung: Akte, Ämter, Bücher, Vertrauenskarten</li>
+            <li>Steckbriefe mit eigenen Feldern, Geburtstage im Kalender</li>
+            <li>Elternsprechtag: Raster im eigenen Takt, Noten aus allen Kursen</li>
+            <li>Gesprächsnotizen – Absprachen werden zu Aufgaben mit Frist</li>
+            <li>Checklisten mit Vorlagen und Fristen, Projekte mit Kursbezug</li>
+            <li>Listen &amp; Abgaben, auch für Geld – mit Quittungsdruck</li>
+            <li>Aufgaben nach Kurs und Thema, Fristen im Kalender</li>
+            <li>Tool-Zugänge und Schüler-Zugangscodes, am Beamer gesperrt</li>
+            <li>KI-Prompts: Vorlagen-Bibliothek für externe KI-Werkzeuge</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Daten &amp; Technik</h3>
+          <ul class="plain-list">
+            <li>Läuft komplett lokal – kein Server, kein Konto, kein Abo</li>
+            <li>Vollsicherung als eine Datei, mit wöchentlicher Erinnerung</li>
+            <li>Papierkorb statt Hartlöschen, Archiv statt Überschreiben</li>
+            <li>Halbjahres- und Schuljahresabschluss mit Notenarchiv</li>
+            <li>Kurs-Übertrag für neu zusammengesetzte Lerngruppen</li>
+            <li>CSV-Import mit freier Spaltenzuordnung</li>
+            <li>Druckansichten: NRW-Kurslisten, Deckblätter, Organigramm</li>
+            <li>Module einzeln abschaltbar, Navigation frei anpassbar</li>
+            <li>Helles und dunkles Design</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" style="margin-top:18px">
+        <h3>In Vorbereitung</h3>
+        <ul class="plain-list">
+          <li>IServ-Schnittstelle</li>
+          <li>WebUntis-Schnittstelle</li>
+          <li>und viele weitere Funktionen</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <!-- ============================= FAQ ============================ -->
-  <section class="alt faq" id="faq">
+  <section class="faq" id="faq">
     <div class="wrap">
       <div class="section-head">
         <span class="section-eyebrow">FAQ</span>

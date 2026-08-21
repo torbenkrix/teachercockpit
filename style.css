@@ -24,6 +24,9 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+/* Ankersprünge landen sonst unter dem sticky Header (mobil zweizeilig, daher mehr). */
+section[id], div[id] { scroll-margin-top: 76px; }
+@media (max-width: 620px) { section[id], div[id] { scroll-margin-top: 112px; } }
 
 body {
   margin: 0;
@@ -496,7 +499,11 @@ body.lightbox-offen { overflow: hidden; }
 }
 @media (max-width: 620px) {
   .grid.cols-3, .grid.cols-2, .shots, .price-cards { grid-template-columns: 1fr; }
-  .site-nav { display: none; }
+  /* Nav bleibt sichtbar (vorher display:none — auf dem Smartphone fehlte jede
+     Navigation): kompaktere, umbrechende Links statt eines Burger-Menüs. */
+  .site-header .wrap { flex-direction: column; gap: 6px; align-items: flex-start; }
+  .site-nav { gap: 2px; }
+  .site-nav a { padding: 4px 8px; font-size: .82rem; }
   section { padding: 56px 0; }
   .hero { padding: 64px 0 52px; }
   .step-text h3 { font-size: 1.24rem; }

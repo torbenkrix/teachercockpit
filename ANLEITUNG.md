@@ -77,10 +77,31 @@ Ebenfalls bewusst: Die Seite verspricht keine Funktionen, die noch nicht stehen.
 
 ---
 
+## SEO & Google (Stand 21.08.2026)
+
+Die Seite ist für Suchmaschinen vorbereitet: Titel und Beschreibung mit Suchbegriffen, `canonical`-Adresse, Open-Graph-/Twitter-Vorschaukarten, Favicon, strukturierte Daten (SoftwareApplication mit Preis + FAQ als JSON-LD), `robots.txt` und `sitemap.xml`.
+
+**Die Domain steht überall als `https://teachercockpit.de/`.** Liegt die Seite woanders (z. B. GitHub Pages mit Unterordner oder `www.`-Variante), diese Adresse an vier Stellen anpassen: im `<head>` von `index.html` (canonical + og:/twitter:-Tags + beide JSON-LD-Blöcke), in den canonical-Zeilen von `datenschutz.html`/`impressum.html`, in `robots.txt` (Sitemap-Zeile) und in `sitemap.xml` (drei URLs).
+
+**Bei Google anmelden** (einmalig, ~10 Minuten — das geht nur über dein Konto):
+
+1. [search.google.com/search-console](https://search.google.com/search-console) → „Property hinzufügen" → **Domain** `teachercockpit.de` eingeben.
+2. Google zeigt einen TXT-Eintrag → beim Domain-Anbieter (wo teachercockpit.de registriert ist) ins DNS eintragen → „Bestätigen".
+3. In der Search Console links **Sitemaps** → `https://teachercockpit.de/sitemap.xml` eintragen → Senden.
+4. Optional beschleunigen: oben in der URL-Prüfung `https://teachercockpit.de/` eingeben → „Indexierung beantragen".
+
+Google findet die Seite auch ohne diese Anmeldung, aber deutlich langsamer — und nur mit der Search Console siehst du, wonach Leute suchen. Dasselbe gratis bei Bing: [bing.com/webmasters](https://www.bing.com/webmasters) (kann die Search-Console-Property importieren, kein zweiter DNS-Eintrag nötig).
+
+**Wenn sich Preis oder Store-Link ändern:** auch im JSON-LD-Block in `index.html` mitziehen — der steht fest im HTML, weil Suchmaschinen `config.js` nicht ausführen.
+
+---
+
 ## Checkliste
 
 - [x] `config.js`: Name, Anschrift, E-Mail, Preise eingetragen
 - [x] Datenschutz und Impressum final, Entwurfs-Kästen entfernt
+- [x] `storeUrl` eingetragen (Store-ID 9N7FBMHQMJBT) — Seite ist erst nach der Store-Veröffentlichung erreichbar; bis dahin ggf. auf "" zurücksetzen
+- [x] SEO-Grundausstattung (Meta, JSON-LD, Sitemap, robots.txt, Favicon)
 - [ ] Kurze juristische Prüfung der Rechtstexte (empfohlen, kein Rechtsrat von mir)
-- [ ] `storeUrl` nachtragen, sobald der Store-Eintrag steht
-- [ ] Bei Ablauf des Einführungspreises: `priceIntro` auf "" setzen
+- [ ] Google Search Console: Domain bestätigen + Sitemap einreichen (Schritte oben)
+- [ ] Bei Ablauf des Einführungspreises: `priceIntro` auf "" setzen — auch im JSON-LD
