@@ -81,13 +81,31 @@ Ebenfalls bewusst: Die Seite verspricht keine Funktionen, die noch nicht stehen.
 
 Die Seite ist für Suchmaschinen vorbereitet: Titel und Beschreibung mit Suchbegriffen, `canonical`-Adresse, Open-Graph-/Twitter-Vorschaukarten, Favicon, strukturierte Daten (SoftwareApplication mit Preis + FAQ als JSON-LD), `robots.txt` und `sitemap.xml`.
 
-**Die Domain steht überall als `https://teachercockpit.de/`.** Liegt die Seite woanders (z. B. GitHub Pages mit Unterordner oder `www.`-Variante), diese Adresse an vier Stellen anpassen: im `<head>` von `index.html` (canonical + og:/twitter:-Tags + beide JSON-LD-Blöcke), in den canonical-Zeilen von `datenschutz.html`/`impressum.html`, in `robots.txt` (Sitemap-Zeile) und in `sitemap.xml` (drei URLs).
+**Die Adresse steht überall als `https://teachercockpit.de/`** — die Seite läuft auf GitHub Pages mit teachercockpit.de als Custom Domain (Domain liegt bei Strato). Der GitHub-Hosting-Abschnitt der Datenschutzerklärung passt dazu unverändert: Gehostet wird weiterhin bei GitHub, nur die Adresse ist die eigene.
 
-**Bei Google anmelden** (einmalig, ~10 Minuten — das geht nur über dein Konto):
+## Custom Domain einrichten (einmalig: Strato + GitHub)
 
-1. [search.google.com/search-console](https://search.google.com/search-console) → „Property hinzufügen" → **Domain** `teachercockpit.de` eingeben.
-2. Google zeigt einen TXT-Eintrag → beim Domain-Anbieter (wo teachercockpit.de registriert ist) ins DNS eintragen → „Bestätigen".
-3. In der Search Console links **Sitemaps** → `https://teachercockpit.de/sitemap.xml` eintragen → Senden.
+Ziel: Die Browserleiste zeigt teachercockpit.de, die alte github.io-Adresse leitet automatisch um. **Reihenfolge einhalten** — erst DNS, dann GitHub, dann hochladen.
+
+**Schritt 1 — Strato (DNS):** Strato-Kundenlogin → Domains → teachercockpit.de → **DNS-Verwaltung** (je nach Paket „Nameserver-/DNS-Einstellungen").
+
+- **A-Record** der Hauptdomain (teachercockpit.de) auf GitHubs Pages-Server stellen: `185.199.108.153` — falls Strato mehrere IPv4-Einträge erlaubt, alle vier eintragen: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` (Redundanz; eine genügt zum Funktionieren).
+- **CNAME** für die Subdomain `www` auf `torbenkrix.github.io` (Punkt am Ende, falls Strato ihn verlangt).
+- **NICHT anfassen: die MX-Einträge** — darüber läuft die Mail info@teachercockpit.de. A/CNAME betreffen nur den Web-Aufruf, die Mail bleibt unberührt.
+
+**Schritt 2 — GitHub:** Repository → Settings → Pages → **Custom domain**: `teachercockpit.de` eintragen → Save. GitHub prüft den DNS-Eintrag (nach Strato-Änderung ein paar Minuten bis wenige Stunden Geduld). Sobald der Haken grün ist und das Zertifikat ausgestellt wurde: **„Enforce HTTPS" anhaken.**
+
+**Schritt 3 — Hochladen:** Den aktuellen `website/`-Inhalt hochladen. Die Datei **`CNAME`** (Inhalt: `teachercockpit.de`) liegt jetzt mit im Ordner und muss bei **jedem** Upload dabei sein — GitHub liest die Domain-Bindung aus dieser Datei; ein Upload ohne sie löst die Domain wieder.
+
+*Optional, empfohlen:* In den persönlichen GitHub-Einstellungen (Settings → Pages → „Verified domains") die Domain per TXT-Record verifizieren — schützt davor, dass jemand anders sie je auf ein eigenes Pages-Projekt binden kann.
+
+## Bei Google anmelden (einmalig, ~10 Minuten — nur über dein Konto)
+
+Mit der eigenen Domain geht die sauberste Variante, die **Domain-Property** (deckt http/https und www/ohne-www gemeinsam ab):
+
+1. [search.google.com/search-console](https://search.google.com/search-console) → „Property hinzufügen" → links **Domain** → `teachercockpit.de` eingeben.
+2. Google zeigt einen **TXT-Eintrag** → bei Strato in der DNS-Verwaltung als TXT-Record eintragen → in der Search Console „Bestätigen" (kann nach dem Eintragen einige Minuten dauern).
+3. Links **Sitemaps** → `https://teachercockpit.de/sitemap.xml` eintragen → Senden.
 4. Optional beschleunigen: oben in der URL-Prüfung `https://teachercockpit.de/` eingeben → „Indexierung beantragen".
 
 Google findet die Seite auch ohne diese Anmeldung, aber deutlich langsamer — und nur mit der Search Console siehst du, wonach Leute suchen. Dasselbe gratis bei Bing: [bing.com/webmasters](https://www.bing.com/webmasters) (kann die Search-Console-Property importieren, kein zweiter DNS-Eintrag nötig).
