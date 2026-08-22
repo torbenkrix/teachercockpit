@@ -5,9 +5,10 @@
    ========================================================================= */
 window.SITE = {
   /* --- Marketing --------------------------------------------------------- */
-  // Link zum Microsoft-Store-Eintrag (Store-ID 9N7FBMHQMJBT, dieselbe wie im
-  // Kauf-Deep-Link der App). Leer ("") = Buttons zeigen "Bald im Microsoft Store".
-  storeUrl: "https://apps.microsoft.com/detail/9N7FBMHQMJBT",
+  // Link zum Microsoft-Store-Eintrag. WICHTIG: 9P0T7LSNTL47 ist die Store-ID der APP.
+  // Die Add-on-ID 9N7FBMHQMJBT gehoert NICHT hierher - Add-ons haben keine Produktseite
+  // und liefern "Produkt nicht verfuegbar". Leer ("") = "Bald im Microsoft Store".
+  storeUrl: "https://apps.microsoft.com/detail/9P0T7LSNTL47",
 
   // Preise. priceIntro leer lassen, wenn es keinen Einführungspreis (mehr)
   // gibt – dann steht nur der reguläre Preis auf der Seite.
