@@ -17,7 +17,16 @@ Statische Seite, keine Abhängigkeiten, keine externen Ressourcen. Läuft auf je
 
 ---
 
-## Der eine Schalter: `storeUrl`
+## Die zwei Schalter: `storeUrl` und `macStoreUrl`
+
+Seit dem 18.09.2026 ist die Mac-Fassung im Mac App Store (`macStoreUrl`, id6808935146). Alle Knöpfe mit
+`data-store-mac` (Kopfbereich, beide Preiskarten, der Link in der Mac-FAQ) lesen diesen Link; ist er leer,
+verschwinden sie samt der Sätze mit `data-mac-only`. Die Windows-Knöpfe (`data-store`) sind davon unberührt.
+Der Preis gilt in beiden Stores gleich (14,99 € Einführungspreis bis 31.10.2026, danach 24,99 €; Torben, 18.09.).
+Der Absatz „Windows oder Mac?" beim Preis nennt die Beträge fest — läuft der Einführungspreis aus, dort mitändern
+(er hängt nicht an `priceIntro`).
+
+### Der Windows-Schalter: `storeUrl`
 
 In `config.js` steht `storeUrl: ""`. Solange das so ist:
 

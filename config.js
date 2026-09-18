@@ -10,6 +10,10 @@ window.SITE = {
   // und liefern "Produkt nicht verfuegbar". Leer ("") = "Bald im Microsoft Store".
   storeUrl: "https://apps.microsoft.com/detail/9P0T7LSNTL47",
 
+  // Link zum Mac-App-Store-Eintrag (seit 18.09.2026 live; Erfordert macOS 12 oder neuer).
+  // Leer ("") = die Mac-Knoepfe verschwinden, die Windows-Knoepfe bleiben.
+  macStoreUrl: "https://apps.apple.com/de/app/teachercockpit/id6808935146?mt=12",
+
   // Preise. priceIntro leer lassen, wenn es keinen Einführungspreis (mehr)
   // gibt – dann steht nur der reguläre Preis auf der Seite.
   priceRegular: "24,99 €",
@@ -66,6 +70,24 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!el.hasAttribute("data-store-keep-text")) el.textContent = "Im Microsoft Store holen";
       el.classList.remove("is-pending");
     }
+  });
+
+  // Mac-App-Store-Buttons: dieselbe Regel. Ohne Link verschwinden sie ganz —
+  // ein zweiter "Bald"-Knopf neben dem ersten waere Laerm.
+  document.querySelectorAll("[data-store-mac]").forEach(function (el) {
+    if (S.macStoreUrl) {
+      el.setAttribute("href", S.macStoreUrl);
+      el.setAttribute("target", "_blank");
+      el.setAttribute("rel", "noopener");
+      if (!el.hasAttribute("data-store-keep-text")) el.textContent = "Im Mac App Store laden";
+      el.classList.remove("is-pending");
+    } else {
+      el.style.display = "none";
+    }
+  });
+  // Saetze, die nur mit Mac-Link gelten
+  document.querySelectorAll("[data-mac-only]").forEach(function (el) {
+    if (!S.macStoreUrl) el.style.display = "none";
   });
 
   // Preise: Einführungspreis wird groß gezeigt, der reguläre daneben

@@ -402,6 +402,9 @@ body.lightbox-offen { overflow: hidden; }
 }
 .price-card ul { margin: 0 0 24px; padding-left: 20px; color: var(--ink-soft); font-size: .95rem; }
 .price-card li { margin-bottom: 5px; }
+/* Zwei Store-Knoepfe (Microsoft, Mac App Store) nebeneinander; brechen bei Platzmangel um. */
+.store-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.store-row .btn { flex: 1 1 auto; text-align: center; padding-left: 18px; padding-right: 18px; }
 .note { font-size: .92rem; color: var(--ink-soft); margin-top: 24px; max-width: 46em; }
 
 /* Hinweiskasten "noch nicht im Store" — blendet sich aus, sobald storeUrl gesetzt ist */

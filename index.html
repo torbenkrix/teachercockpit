@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TeachercocKpit – Notenbuch & Unterrichtsplaner für Lehrkräfte</title>
-<meta name="description" content="Digitales Notenbuch, Sitzplan, Unterrichtsplanung und Klassenleitung in einer Windows-App – komplett lokal, ohne Cloud, ohne Abo. Kostenlos ausprobieren im Testmodus.">
+<meta name="description" content="Digitales Notenbuch, Sitzplan, Unterrichtsplanung und Klassenleitung in einer App für Windows und Mac – komplett lokal, ohne Cloud, ohne Abo. Kostenlos ausprobieren im Testmodus.">
 <!-- SEO: Die kanonische Adresse der Seite. Liegt die Website unter einer anderen
      Domain oder in einem Unterordner (z. B. GitHub Pages), diese URL hier sowie in
      den og:/twitter:-Tags, im JSON-LD unten und in sitemap.xml anpassen. -->
@@ -18,14 +18,14 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="TeachercocKpit">
 <meta property="og:title" content="TeachercocKpit – Notenbuch & Unterrichtsplaner für Lehrkräfte">
-<meta property="og:description" content="Digitales Notenbuch, Sitzplan, Unterrichtsplanung und Klassenleitung in einer Windows-App – komplett lokal, ohne Cloud, ohne Abo.">
+<meta property="og:description" content="Digitales Notenbuch, Sitzplan, Unterrichtsplanung und Klassenleitung in einer App für Windows und Mac – komplett lokal, ohne Cloud, ohne Abo.">
 <meta property="og:url" content="https://teachercockpit.de/">
 <meta property="og:image" content="https://teachercockpit.de/screenshots/01_cockpit.png">
 <meta property="og:image:alt" content="Die Startseite des TeachercocKpit mit Wochenstundenplan, heutigen Stunden und Kursen.">
 <meta property="og:locale" content="de_DE">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="TeachercocKpit – Notenbuch & Unterrichtsplaner für Lehrkräfte">
-<meta name="twitter:description" content="Digitales Notenbuch, Sitzplan, Unterrichtsplanung und Klassenleitung in einer Windows-App – komplett lokal, ohne Cloud, ohne Abo.">
+<meta name="twitter:description" content="Digitales Notenbuch, Sitzplan, Unterrichtsplanung und Klassenleitung in einer App für Windows und Mac – komplett lokal, ohne Cloud, ohne Abo.">
 <meta name="twitter:image" content="https://teachercockpit.de/screenshots/01_cockpit.png">
 <link rel="stylesheet" href="style.css">
 <!-- Strukturierte Daten für Suchmaschinen. Preis und Store-Link stehen hier bewusst
@@ -35,18 +35,16 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "TeachercocKpit",
-  "operatingSystem": "Windows 10, Windows 11",
+  "operatingSystem": "Windows 10, Windows 11, macOS 12.0",
   "applicationCategory": "EducationalApplication",
   "description": "Digitales Notenbuch und Unterrichtsplaner für Lehrkräfte: Sitzplan mit Noteneingabe, SoMi und Klausuren, Kompetenzraster, Feedbackbögen, Unterrichtsplanung und Klassenleitung – komplett lokal auf dem eigenen Rechner, ohne Cloud, ohne Konto, ohne Abo.",
   "url": "https://teachercockpit.de/",
   "image": "https://teachercockpit.de/screenshots/01_cockpit.png",
   "inLanguage": "de",
-  "offers": {
-    "@type": "Offer",
-    "price": "14.99",
-    "priceCurrency": "EUR",
-    "url": "https://apps.microsoft.com/detail/9P0T7LSNTL47"
-  },
+  "offers": [
+    { "@type": "Offer", "price": "14.99", "priceCurrency": "EUR", "url": "https://apps.microsoft.com/detail/9P0T7LSNTL47" },
+    { "@type": "Offer", "price": "14.99", "priceCurrency": "EUR", "url": "https://apps.apple.com/de/app/teachercockpit/id6808935146?mt=12" }
+  ],
   "author": { "@type": "Person", "name": "Torben Krix" }
 }
 </script>
@@ -56,21 +54,23 @@
   "@type": "FAQPage",
   "mainEntity": [
     { "@type": "Question", "name": "Brauche ich eine Internetverbindung?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Nein. Die App läuft vollständig offline. Internet brauchst du nur für den Kauf im Microsoft Store und für Updates." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "Nein. Die App läuft vollständig offline. Internet brauchst du nur für den Kauf im Store und für Updates." } },
     { "@type": "Question", "name": "Wo liegen meine Daten?",
       "acceptedAnswer": { "@type": "Answer", "text": "Ausschließlich lokal auf deinem Rechner – in einer Datei, deren Speicherort du selbst wählst, und in Sicherungsordnern, die du selbst festlegst. Es gibt keinen Hersteller-Server und keine Cloud-Pflicht." } },
     { "@type": "Question", "name": "Was passiert, wenn mein Rechner kaputtgeht?",
       "acceptedAnswer": { "@type": "Answer", "text": "Dafür gibt es die Vollsicherung: eine einzige Datei mit dem kompletten Datenbestand, die du auf ein neues Gerät mitnimmst und dort einliest. Das Cockpit erinnert dich wöchentlich daran, wenn länger keine Sicherung entstanden ist." } },
     { "@type": "Question", "name": "Kann ich meine bestehenden Klassenlisten übernehmen?",
       "acceptedAnswer": { "@type": "Answer", "text": "Ja. Schülerlisten lassen sich als CSV-Datei importieren – mit freier Spaltenzuordnung, weil jede Schule ihre Listen anders exportiert." } },
+    { "@type": "Question", "name": "Gibt es TeachercocKpit auch für den Mac?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ja. Die Fassung für macOS gibt es im Mac App Store (macOS 12 oder neuer). Es ist dieselbe Anwendung mit demselben Funktionsumfang; auch dort bleiben alle Daten auf dem eigenen Gerät. Ein Kauf im einen Store gilt nicht automatisch im anderen – Microsoft und Apple rechnen getrennt ab." } },
     { "@type": "Question", "name": "Läuft TeachercocKpit auf dem iPad?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Die Desktop-App gibt es für Windows über den Microsoft Store. Zusätzlich existiert eine Browser-Variante, die sich auch auf einem iPad nutzen lässt – mit Einschränkungen bei der Dateiablage." } },
+      "acceptedAnswer": { "@type": "Answer", "text": "Die Desktop-App gibt es für Windows über den Microsoft Store und für den Mac über den Mac App Store. Zusätzlich existiert eine Browser-Variante, die sich auch auf einem iPad nutzen lässt – mit Einschränkungen bei der Dateiablage." } },
     { "@type": "Question", "name": "Muss ich alles benutzen, was drin ist?",
       "acceptedAnswer": { "@type": "Answer", "text": "Nein. Klassenleitung, Projekte, Gespräche, Checklisten, Elternsprechtag und weitere Bereiche lassen sich einzeln abschalten. Abschalten blendet nur aus – deine Daten bleiben erhalten." } },
     { "@type": "Question", "name": "Was passiert am Ende des Halbjahres?",
       "acceptedAnswer": { "@type": "Answer", "text": "Der Halbjahresabschluss archiviert den kompletten Notenstand und leert den Kurs für das neue Halbjahr – Schülerliste, Notenschema und Planung bleiben stehen. Zum Schuljahresende rückt zusätzlich die Jahrgangsstufe weiter." } },
     { "@type": "Question", "name": "Ist das ein Abo?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Nein. Der Testmodus ist kostenlos, die Vollversion ist ein einmaliger Kauf. Die Lizenz hängt an deinem Microsoft-Konto und übersteht Neuinstallation und Gerätewechsel." } }
+      "acceptedAnswer": { "@type": "Answer", "text": "Nein. Der Testmodus ist kostenlos, die Vollversion ist ein einmaliger Kauf. Die Lizenz hängt an deinem Microsoft- bzw. Apple-Konto und übersteht Neuinstallation und Gerätewechsel." } }
   ]
 }
 </script>
@@ -103,12 +103,13 @@
         <p class="lead">Sitzplan, Anwesenheit, Noten, Kompetenzen, Feedback und Klassenleitung – alles an einem Ort, lokal auf deinem Rechner. Statt Zettelwirtschaft und Excel-Flickwerk.</p>
         <div class="hero-actions">
           <a class="btn btn-primary is-pending" data-store href="#">Bald im Microsoft Store</a>
+          <!-- Die Mac-Fassung ist seit dem 18.09.2026 im Mac App Store — der zweite Knopf.
+               config.js setzt den Link (macStoreUrl); ohne Link verschwindet der Knopf. -->
+          <a class="btn btn-primary" data-store-mac href="https://apps.apple.com/de/app/teachercockpit/id6808935146?mt=12" target="_blank" rel="noopener">Im Mac App Store laden</a>
           <a class="btn btn-secondary" href="#schultag">So arbeitest du damit</a>
         </div>
-        <!-- Die Mac-Fassung. Steht bewusst als eigene Zeile unter den Knoepfen und nicht
-             als dritter Knopf: Es gibt noch nichts zu klicken. -->
-        <p class="hero-note"><strong>Neu:</strong> Die Fassung für <strong>macOS</strong>
-          erscheint in wenigen Tagen im Mac&nbsp;App&nbsp;Store.</p>
+        <p class="hero-note" data-mac-only><strong>Für Windows und Mac.</strong> Windows&nbsp;10/11 über den Microsoft Store,
+          macOS&nbsp;12 oder neuer über den Mac&nbsp;App&nbsp;Store – dieselbe App, dieselben Daten auf dem eigenen Gerät.</p>
       </div>
       <div class="window">
         <div class="window-bar"><i></i><i></i><i></i></div>
@@ -388,7 +389,7 @@
           </ul>
         </div>
       </div>
-      <p class="note">Für dich heißt das: Schülerdaten liegen dort, wo sie hingehören – auf deinem eigenen, dienstlich genutzten Gerät und in Sicherungsordnern, die du selbst bestimmst. Internet brauchst du nur für den Kauf im Microsoft Store und für Updates. Ob der Einsatz an deiner Schule datenschutzrechtlich zulässig ist, entscheidet sich am Gerät und an der Schulordnung – das Programm nimmt dir diese Prüfung nicht ab, macht sie aber einfach: Es überträgt nichts. Das ist nicht nur eine Zusage: Eine Sperre im Programm weist jede Verbindung nach draußen ab – auch eine, die versehentlich hineingerät.</p>
+      <p class="note">Für dich heißt das: Schülerdaten liegen dort, wo sie hingehören – auf deinem eigenen, dienstlich genutzten Gerät und in Sicherungsordnern, die du selbst bestimmst. Internet brauchst du nur für den Kauf im Store und für Updates. Ob der Einsatz an deiner Schule datenschutzrechtlich zulässig ist, entscheidet sich am Gerät und an der Schulordnung – das Programm nimmt dir diese Prüfung nicht ab, macht sie aber einfach: Es überträgt nichts. Das ist nicht nur eine Zusage: Eine Sperre im Programm weist jede Verbindung nach draußen ab – auch eine, die versehentlich hineingerät.</p>
     </div>
   </section>
 
@@ -450,7 +451,10 @@
             <li>Ohne Anmeldung, ohne Zeitlimit</li>
             <li>Keine Speicherung echter Daten</li>
           </ul>
-          <a class="btn btn-secondary is-pending" data-store href="#">Bald im Microsoft Store</a>
+          <div class="store-row">
+            <a class="btn btn-secondary is-pending" data-store href="#">Bald im Microsoft Store</a>
+            <a class="btn btn-secondary" data-store-mac href="https://apps.apple.com/de/app/teachercockpit/id6808935146?mt=12" target="_blank" rel="noopener">Im Mac App Store laden</a>
+          </div>
         </div>
         <div class="price-card featured">
           <span class="ribbon">Empfohlen</span>
@@ -459,14 +463,18 @@
           <div class="amount" data-price>einmalig, fairer Preis</div>
           <ul>
             <li>Echtbetrieb mit deinen Kursen und Klassen</li>
-            <li>Einmalkauf im Microsoft Store – kein Abo</li>
+            <li>Einmalkauf im Microsoft Store oder im Mac App Store – kein Abo</li>
             <li>Lizenz bleibt bei Neuinstallation und Gerätewechsel erhalten</li>
             <li>Updates über den Store inklusive</li>
           </ul>
-          <a class="btn btn-primary is-pending" data-store href="#">Bald im Microsoft Store</a>
+          <div class="store-row">
+            <a class="btn btn-primary is-pending" data-store href="#">Bald im Microsoft Store</a>
+            <a class="btn btn-primary" data-store-mac href="https://apps.apple.com/de/app/teachercockpit/id6808935146?mt=12" target="_blank" rel="noopener">Im Mac App Store laden</a>
+          </div>
         </div>
       </div>
       <p class="note" data-intro-note>Der Einführungspreis gilt zum Start und wird später auf den regulären Preis angehoben. Wer einmal gekauft hat, behält die Vollversion – auch bei Neuinstallation und Gerätewechsel.</p>
+      <p class="note" data-mac-only><strong>Windows oder Mac?</strong> Die App ist in beiden Stores dieselbe, und der Preis auch: 14,99&nbsp;€ als Einführungspreis bis zum 31.10.2026 in beiden Stores, danach 24,99&nbsp;€. Ein Kauf gilt jeweils für den Store, in dem er getätigt wurde: Microsoft und Apple rechnen getrennt ab.</p>
       <p class="note"><strong>Für Kollegien und Fachschaften:</strong> Test-Zugänge (Promo-Codes) gibt es auf Anfrage – <a href="#kontakt">einfach melden</a>.</p>
 
       <!-- Store-Status: solange storeUrl in config.js leer ist, steht hier der
@@ -475,12 +483,10 @@
       <div class="store-status" data-store-pending>
         <div class="store-status-icon" aria-hidden="true">🛈</div>
         <div>
-          <strong>Noch nicht im Store verfügbar.</strong>
+          <strong>Noch nicht im Microsoft Store verfügbar.</strong>
           Die Anwendung ist fertig und wird gerade für die Veröffentlichung im Microsoft Store vorbereitet.
           Sobald der Eintrag freigeschaltet ist, führen die Knöpfe auf dieser Seite direkt dorthin.
-          <br><strong>Und für den Mac:</strong> Eine Fassung für <strong>macOS</strong> erscheint
-          in wenigen Tagen im Mac&nbsp;App&nbsp;Store – dieselbe App, derselbe Funktionsumfang,
-          dieselben Daten auf dem eigenen Gerät.
+          Für den Mac gibt es die App bereits im Mac&nbsp;App&nbsp;Store.
           Wer vorab Bescheid wissen möchte: <a href="#kontakt">kurz melden</a> – dann gibt es eine Nachricht zum Start.
         </div>
       </div>
@@ -637,7 +643,7 @@
       </div>
       <details>
         <summary>Brauche ich eine Internetverbindung?</summary>
-        <p>Nein. Die App läuft vollständig offline. Internet brauchst du nur für den Kauf im Microsoft Store und für Updates.</p>
+        <p>Nein. Die App läuft vollständig offline. Internet brauchst du nur für den Kauf im Store und für Updates.</p>
       </details>
       <details>
         <summary>Wo liegen meine Daten?</summary>
@@ -653,14 +659,14 @@
       </details>
       <details>
         <summary>Gibt es TeachercocKpit auch für den Mac?</summary>
-        <p><strong>Ja – in wenigen Tagen.</strong> Die Fassung für macOS erscheint im Mac&nbsp;App&nbsp;Store.
-          Es ist dieselbe Anwendung mit demselben Funktionsumfang; auch dort bleiben alle Daten
-          auf dem eigenen Gerät. Ein Kauf im einen Store gilt nicht automatisch im anderen –
+        <p><strong>Ja.</strong> Die Fassung für macOS gibt es <a data-store-mac data-store-keep-text href="https://apps.apple.com/de/app/teachercockpit/id6808935146?mt=12" target="_blank" rel="noopener">im Mac&nbsp;App&nbsp;Store</a>
+          (macOS&nbsp;12 oder neuer). Es ist dieselbe Anwendung mit demselben Funktionsumfang; auch dort bleiben alle Daten
+          auf dem eigenen Gerät – Time&nbsp;Machine sichert sie mit. Ein Kauf im einen Store gilt nicht automatisch im anderen –
           Microsoft und Apple rechnen getrennt ab.</p>
       </details>
       <details>
         <summary>Läuft TeachercocKpit auf dem iPad?</summary>
-        <p>Die Desktop-App gibt es für Windows über den Microsoft Store. Zusätzlich existiert eine Browser-Variante, die sich auch auf einem iPad nutzen lässt – mit Einschränkungen bei der Dateiablage, weil Browser dort weniger dürfen.</p>
+        <p>Die Desktop-App gibt es für Windows über den Microsoft Store und für den Mac über den Mac&nbsp;App&nbsp;Store. Zusätzlich existiert eine Browser-Variante, die sich auch auf einem iPad nutzen lässt – mit Einschränkungen bei der Dateiablage, weil Browser dort weniger dürfen.</p>
       </details>
       <details>
         <summary>Muss ich alles benutzen, was drin ist?</summary>
@@ -672,7 +678,7 @@
       </details>
       <details>
         <summary>Ist das ein Abo?</summary>
-        <p>Nein. Der Testmodus ist kostenlos, die Vollversion ist ein einmaliger Kauf. Die Lizenz hängt an deinem Microsoft-Konto und übersteht Neuinstallation und Gerätewechsel.</p>
+        <p>Nein. Der Testmodus ist kostenlos, die Vollversion ist ein einmaliger Kauf. Die Lizenz hängt an deinem Microsoft- bzw. Apple-Konto und übersteht Neuinstallation und Gerätewechsel.</p>
       </details>
     </div>
   </section>
